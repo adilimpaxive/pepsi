@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#292943</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccentLite">#99FF4081</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="menu_border_color">#52a0db</color>
+    <color name="facebook_color">#3b5998</color>
+    <color name="facebook_color_pressed">#993b5998</color>
+    <color name="google_color">#dd4b39</color>
+    <color name="google_color_pressed">#99dd4b39</color>
+
+    <color name="player_page_bottom_title_text_color">#e7e4e4</color>
+    <color name="judge_text_background">#424368</color>
+    <color name="color_performences_background">#2f3048</color>
+    <color name="schedule_title_color">#767187</color>
+    <color name="schedule_time_color">#64cbe7</color>
+    <color name="schedule_group_color">#20152d</color>
+    <color name="download_background_color">#484989</color>
+    <color name="player_background_color">#424368</color>
+    <color name="signup_background_color">#333454</color>
+    <color name="popup_border">#aeaeae</color>
+
+
+    <color name="theme_background_color">#104229</color>
+    <color name="theme_background_color_top">#be104229</color>
+    <color name="theme_text_color">#2b8623</color>
+    <color name="title_color">#a8aaff</color>
+</resources>

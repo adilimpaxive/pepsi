@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layoutSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_season_item"
+                android:popupBackground="@color/transparent" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/layoutDropDown"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/layoutDropDown"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/drop_down_arrow" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/layoutEpisodes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageViewEpisodes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/background_season_item"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/episodes_theme" />
+
+                    <TextView
+                        android:id="@+id/textViewEpisodes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="EPISODES"
+                        android:textColor="@color/theme_background_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/layoutTop8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="1px">
+
+                    <ImageView
+                        android:id="@+id/imageViewTop8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/background_season_item"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/top8_theme" />
+
+                    <TextView
+                        android:id="@+id/textViewTop8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="TOP 12"
+                        android:textColor="@color/theme_background_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/layoutSchedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="1px">
+
+                    <ImageView
+                        android:id="@+id/imageViewSchedule"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/background_season_item"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/schedule_theme" />
+
+                    <TextView
+                        android:id="@+id/textViewSchedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="SCHEDULE"
+                        android:textColor="@color/theme_background_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/layoutGallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="1px">
+
+                    <ImageView
+                        android:id="@+id/imageViewGallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/background_season_item"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/bob_moments_theme" />
+
+                    <TextView
+                        android:id="@+id/textViewGallery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="BoB MOMENTS"
+                        android:textColor="@color/theme_background_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/layoutNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="1px">
+
+                    <ImageView
+                        android:id="@+id/imageViewNews"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/background_season_item"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/news_theme" />
+
+                    <TextView
+                        android:id="@+id/textViewBobBuzz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="BoB BUZZ"
+                        android:textColor="@color/theme_background_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/layoutFollowUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="1px">
+
+                    <ImageView
+                        android:id="@+id/imageViewFollowUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/background_season_item"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/follow_us_theme" />
+
+                    <TextView
+                        android:id="@+id/textViewFollowUs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="FOLLOW US"
+                        android:textColor="@color/theme_background_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/layoutJudges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="1px">
+
+                    <ImageView
+                        android:id="@+id/imageViewJudges"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/background_season_item"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/news_theme" />
+
+                    <TextView
+                        android:id="@+id/textViewJudges"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="JUDGES"
+                        android:textColor="@color/theme_background_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/layoutSong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="1px">
+
+                    <ImageView
+                        android:id="@+id/imageViewSeasonSong"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/background_season_item"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/follow_us_theme" />
+
+                    <TextView
+                        android:id="@+id/textViewSong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="BOB TRENDING"
+                        android:textColor="@color/theme_background_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

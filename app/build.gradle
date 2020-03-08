@@ -1,0 +1,105 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        // These docs use an open ended version so that our plugin
+        // can be updated quickly in response to Android tooling updates
+
+        // We recommend changing it to the latest version from our changelog:
+        // https://docs.fabric.io/android/changelog.html#fabric-gradle-plugin
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+android {
+    compileSdkVersion 26
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    }
+    defaultConfig {
+        applicationId "com.pepsi.battleofthebands"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 16
+        versionName "1.9"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        setProperty("archivesBaseName", "COMU-$versionName")
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "${variant.baseName}-${variant.versionName}.apk"
+                }
+            }
+        }
+    }
+    signingConfigs {
+        release {
+            keyAlias 'pepsi'
+            keyPassword 'pepsi1'
+            storeFile file('/Users/hasnain/Desktop/PepsiApp/pepsi.jks')
+            storePassword 'centsol123'
+            v2SigningEnabled true
+        }
+
+    }
+    configurations.all {
+        resolutionStrategy.eachDependency { details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion '26.+'
+                }
+            }
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.+'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.3@aar') {
+        transitive = true;
+    }
+    implementation 'com.android.support:design:26.+'
+    implementation files('libs/org.apache.http.legacy.jar')
+    implementation files('libs/android-query-full.0.26.8.jar')
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.facebook.android:facebook-android-sdk:4.33.0'
+    implementation 'com.android.support:support-v4:26.+'
+    implementation 'com.google.android.gms:play-services-gcm:15.0.0'
+    implementation 'com.google.android.gms:play-services-analytics:15.0.0'
+    implementation 'com.google.android.gms:play-services-auth:15.0.0'
+    implementation 'com.google.firebase:firebase-messaging:17.1.0'
+    implementation 'com.google.firebase:firebase-core:15.0.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.5.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.5.0'
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+}
+
+apply plugin: 'com.google.gms.google-services'

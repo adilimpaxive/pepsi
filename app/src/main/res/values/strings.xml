@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Pepsi</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="internet_required_alert">No internet connection available...!</string>
+    <string name="facebook_app_id">1711212902293820</string>
+    <string name="fb_login_protocol_scheme">fb1711212902293820</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="REGISTER">REGISTER</string>
+    <string name="Profile">UPDATE PROFILE</string>
+    <string name="Login_With_Facebook">Login With Facebook</string>
+    <string name="SignUp_With_Facebook">Sign Up With Facebook</string>
+    <string name="login_With_Google">Login With Google</string>
+    <string name="SignUp_With_Google">Sign Up With Google</string>
+    <!--   Signin and Signup Alerts-->
+    <string name="email_required">Email required</string>
+    <string name="valid_email_required">Valid email required</string>
+    <string name="password_not_start_with_empty">Password field should not be empty</string>
+    <string name="field_required">This field is required</string>
+    <string name="password_character">Password should be at least 4 characters</string>
+    <string name="user_Name_not_start_with_empty">Username field should not be empty</string>
+    <string name="first_name_character">First Name should be at least 4 characters</string>
+    <string name="last_name_character">Last Name should be at least 4 characters</string>
+    <string name="password_error">Password not match</string>
+
+    <string name="anthem_description">Presenting to you the long-awaited #PepsiBattleoftheBands SEASON 3 -  where music meets talent, and stars are discovered! Strings, Fawad and Meesha are all set to uncover the talented bands of the country.</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="Forgot_Password">FORGOT PASSWORD?</string>
+    <string name="SELECT_A_SONG_TO_START_PLAYING">SELECT_A_SONG_TO_START_PLAYING</string>
+    <string name="progress_time">00:00</string>
+    <string name="download">Download</string>
+    <string name="remove">Remove</string>
+    <string name="cancel">Cancel</string>
+    <string name="login_error">You have to Login to use this feature</string>
+    <string name="track_remove">Are you sure you want to remove this track? You won’t be able to play it offline</string>
+    <string name="track_cancel">Are you sure you want to cancel saving this track?</string>
+    <string name="track_queue">This track has been queued for save. Are you sure you want to cancel?</string>
+    <string name="share">Share</string>
+    <string name="coming_soon">Coming Soon</string>
+
+</resources>

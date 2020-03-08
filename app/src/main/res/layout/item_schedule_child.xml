@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:text="ARY DIGITAL"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewLiveTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Live"
+                    android:textColor="@color/schedule_title_color" />
+
+                <TextView
+                    android:id="@+id/textViewLiveDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Friday"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textViewLiveTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5:00 PM"
+                    android:textColor="@color/schedule_time_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewRepeatTitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Repeat 1"
+                    android:textColor="@color/schedule_title_color" />
+
+                <TextView
+                    android:id="@+id/textViewRepeatDay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Friday"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textViewRepeatTime1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5:00 PM"
+                    android:textColor="@color/schedule_time_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewRepeatTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Repeat 2"
+                    android:textColor="@color/schedule_title_color" />
+
+                <TextView
+                    android:id="@+id/textViewRepeatDay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Friday"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textViewRepeatTime2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5:00 PM"
+                    android:textColor="@color/schedule_time_color" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutDivider"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

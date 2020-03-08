@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1015873715296",
+    "firebase_url": "https://pepsi-1528444486439.firebaseio.com",
+    "project_id": "pepsi-1528444486439",
+    "storage_bucket": "pepsi-1528444486439.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015873715296:android:5de4857ad1ba66c8",
+        "android_client_info": {
+          "package_name": "com.pepsi.battleofthebands"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015873715296-vmpt008l36hpcud6b7ethr73sd188no8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pepsi.battleofthebands",
+            "certificate_hash": "9e67774d0153cc68c8b5cb96a4cd5ad6da98d2bc"
+          }
+        },
+        {
+          "client_id": "1015873715296-l7512t37n57cp1e4oep89ltphc5g1co5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJKy5VFtNgSQ5_s_Kc2Di5GsHVTq5JNuo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015873715296-l7512t37n57cp1e4oep89ltphc5g1co5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

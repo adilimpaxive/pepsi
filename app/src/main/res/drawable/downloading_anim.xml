@@ -1,0 +1,93 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@mipmap/logo_animate1"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate2"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate3"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate4"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate5"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate6"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate7"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate8"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate9"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate10"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate11"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate12"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate13"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate14"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate15"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate16"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate17"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate18"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate19"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate20"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate21"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate22"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate23"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate24"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate25"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate26"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate27"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate28"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate29"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/logo_animate30"
+        android:duration="30" />
+</animation-list>
